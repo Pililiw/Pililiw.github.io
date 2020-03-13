@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<!--TODO Language-->
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>落葉</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <script type="text/javascript" src="jquery-3.4.1.slim.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<div class="allkeys">
+    <div class="keyrow">
+        <button class="keys" id="key0" data-note="0">
+            <div>
+                <div class="flip keyimg img2"></div>
+            </div>
+        </button>
+        <button class="keys" id="key1" data-note="1">
+            <div>
+                <div class="flip keyimg img1"></div>
+            </div>
+        </button>
+        <button class="keys" id="key2" data-note="2">
+            <div>
+                <div class="flip keyimg img3"></div>
+            </div>
+        </button>
+        <button class="keys" id="key3" data-note="3">
+            <div>
+                <div class="flip keyimg img1"></div>
+            </div>
+        </button>
+        <button class="keys" id="key4" data-note="4">
+            <div>
+                <div class="flip keyimg img3"></div>
+            </div>
+        </button>
+    </div>
+    <div class="keyrow">
+        <button class="keys" id="key5" data-note="5">
+            <div>
+                <div class="flip keyimg img3"></div>
+            </div>
+        </button>
+        <button class="keys" id="key6" data-note="6">
+            <div>
+                <div class="flip keyimg img1"></div>
+            </div>
+        </button>
+        <button class="keys" id="key7" data-note="7">
+            <div>
+                <div class="flip keyimg img2"></div>
+            </div>
+        </button>
+        <button class="keys" id="key8" data-note="8">
+            <div>
+                <div class="flip keyimg img1"></div>
+            </div>
+        </button>
+        <button class="keys" id="key9" data-note="9">
+            <div>
+                <div class="flip keyimg img3"></div>
+            </div>
+        </button>
+    </div>
+    <div class="keyrow">
+        <button class="keys" id="key10" data-note="10">
+            <div>
+                <div class="flip keyimg img3"></div>
+            </div>
+        </button>
+        <button class="keys" id="key11" data-note="11">
+            <div>
+                <div class="flip keyimg img1"></div>
+            </div>
+        </button>
+        <button class="keys" id="key12" data-note="12">
+            <div>
+                <div class="flip keyimg img3"></div>
+            </div>
+        </button>
+        <button class="keys" id="key13" data-note="13">
+            <div>
+                <div class="flip keyimg img1"></div>
+            </div>
+        </button>
+        <button class="keys" id="key14" data-note="14">
+            <div>
+                <div class="flip keyimg img2"></div>
+            </div>
+        </button>
+    </div>
+</div>
+<div class="tools">
+    <input type="range" id="slider" min="0" value="0" step="1"/>
+    <div class="control">
+        <button class="procbtn" id="prevbtn">
+            <svg id="backward" t="1583919630194" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                 xmlns="http://www.w3.org/2000/svg"
+                 p-id="4220" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200">
+                <defs>
+                    <style type="text/css"></style>
+                </defs>
+                <path d="M768 304c-9.344 0-18.064 2.688-25.44 7.296L560 425.392V352a48 48 0 0 0-73.44-40.704l-255.392 159.616-0.256 0.16-0.368 0.224a48.016 48.016 0 0 0 0.016 81.408l0.368 0.24 0.256 0.16 255.392 159.616A48 48 0 0 0 560 672v-73.392l182.56 114.096A48 48 0 0 0 816 672V352a48 48 0 0 0-48-48z"
+                      fill="" p-id="4221"></path>
+            </svg>
+        </button>
+        <button class="procbtn" id="playbtn">
+            <svg id="pause" t="1583919570123" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                 xmlns="http://www.w3.org/2000/svg" p-id="3851" xmlns:xlink="http://www.w3.org/1999/xlink" width="200"
+                 height="200">
+                <defs>
+                    <style type="text/css"></style>
+                </defs>
+                <path d="M416 304a48 48 0 0 0-48 48v320a48 48 0 1 0 96 0V352a48 48 0 0 0-48-48z m192 0a48 48 0 0 0-48 48v320a48 48 0 1 0 96 0V352a48 48 0 0 0-48-48z"
+                      fill="" p-id="3852"></path>
+            </svg>
+            <svg id="play" t="1583919575252" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                 xmlns="http://www.w3.org/2000/svg" p-id="3974" xmlns:xlink="http://www.w3.org/1999/xlink" width="200"
+                 height="200">
+                <defs>
+                    <style type="text/css"></style>
+                </defs>
+                <path d="M736 512c0-17.584-9.472-32.96-23.6-41.328L360.976 263.008l-0.384-0.224-0.176-0.112A48 48 0 0 0 288 304v416a48 48 0 0 0 72.416 41.328l0.176-0.112a2.4 2.4 0 0 1 0.384-0.224l351.424-207.664A47.952 47.952 0 0 0 736 512z"
+                      fill="" p-id="3975"></path>
+            </svg>
+        </button>
+        <button class="procbtn" id="nextbtn">
+            <svg id="forward" t="1583919589639" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                 xmlns="http://www.w3.org/2000/svg"
+                 p-id="4097" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200">
+                <defs>
+                    <style type="text/css"></style>
+                </defs>
+                <path d="M816 512a47.92 47.92 0 0 0-22.56-40.704l-0.336-0.224-0.272-0.16-255.392-159.616A48 48 0 0 0 464 352v73.392l-182.56-114.096A48 48 0 0 0 208 352v320a48 48 0 0 0 73.44 40.704L464 598.608V672a48 48 0 0 0 73.44 40.704l255.392-159.616a0.944 0.944 0 0 1 0.272-0.16l0.336-0.24A47.856 47.856 0 0 0 816 512z"
+                      fill="" p-id="4098"></path>
+            </svg>
+        </button>
+        <!--        <button class="procbtn" id="initbtn">init</button>-->
+    </div>
+    <button id="menubtn">
+        <svg t="1583950874307" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+             p-id="1966" width="200" height="200">
+            <path d="M954.88 237.056H69.12a43.52 43.52 0 1 1 0-87.04h885.248c24.064 0 43.52 19.456 43.52 43.52s-18.944 43.52-43.008 43.52zM954.88 555.52H69.12a43.52 43.52 0 1 1 0-87.04h885.248c24.064 0 43.52 19.456 43.52 43.52s-18.944 43.52-43.008 43.52zM954.88 874.496H69.12a43.52 43.52 0 1 1 0-87.04h885.248c24.064 0 43.52 19.456 43.52 43.52 0.512 24.064-18.944 43.52-43.008 43.52z"
+                  fill="" p-id="1967"></path>
+        </svg>
+    </button>
+    <button id="closebtn">
+        <svg t="1583950894375" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+             p-id="2089" width="200" height="200">
+            <path d="M948.48 992a44.16 44.16 0 0 1-30.72-12.8L44.8 106.24C27.52 88.96 27.52 61.44 44.8 44.8s44.8-17.28 61.44 0L979.2 917.76c17.28 17.28 17.28 44.8 0 61.44a44.16 44.16 0 0 1-30.72 12.8z"
+                  fill="" p-id="2090"></path>
+            <path d="M75.52 992a44.16 44.16 0 0 1-30.72-12.8 42.88 42.88 0 0 1 0-61.44L917.76 44.8c17.28-17.28 44.8-17.28 61.44 0s17.28 44.8 0 61.44L106.24 979.2c-8.32 8.32-19.2 12.8-30.72 12.8z"
+                  fill="" p-id="2091"></path>
+        </svg>
+    </button>
+
+</div>
+<div id="menu">
+    <div class="menuflex">
+        <div style="font-size: 10vw">落葉🍂</div>
+        <div style="font-size: 5vw">楽器</div>
+        <div class="split"></div>
+        <div class="menuline" style="font-size: 3vw">
+            <div class="ins trans" data-value="0">鉄琴</div>
+            <div class="ins trans" data-value="1">ピアノ</div>
+        </div>
+        <div style="font-size: 5vw">速度</div>
+        <div class="split"></div>
+        <div class="menuline" style="font-size: 3vw">
+            <div class="speed trans" data-value="0">0.5x</div>
+            <div class="speed trans" data-value="1">1.0x</div>
+            <div class="speed trans" data-value="2">1.5x</div>
+            <div class="speed trans" data-value="3">2.0x</div>
+        </div>
+    </div>
+</div>
+<div class="mask">
+    <div style="font-size: 10vw;color:white" id="initProcess">1%</div>
+    <div style="font-size: 10vw;color:white;display: none" id="gobtn">Go</div>
+</div>
+<div id="chocolate" style="display: none"></div>
+</body>
+</html>
